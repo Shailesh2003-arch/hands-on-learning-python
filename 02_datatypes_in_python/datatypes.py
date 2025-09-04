@@ -21,3 +21,4 @@ print(f"Shaill your second initial score is : {my_score} and id is : {id(12)}")
 # Now here what you can experience is - the value of my_score is getting changed! but that isn't really the thing, as in Python Numbers are immutable, that is they cannot be changed, so what's exactly happening behind the scenes ?...
 
 # What's happening behind the scene is - inside the memory a completely new Object is created with the value 12 and now your reference - my_score is pointing to that Object.
+
