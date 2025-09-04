@@ -10,7 +10,6 @@
 
 # Always remember that, mutablity is checked through ID and not the value...
 
-
 # Example time...
 
 my_score = 10
