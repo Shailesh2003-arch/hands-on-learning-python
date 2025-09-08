@@ -12,12 +12,23 @@
 # In python for loop iterates only on the iterables, you dont need to manually increment or initialise any value...
 
 
-for token in range(1,11):
-    print(f"Serving chai to token #{token}")
+# for token in range(1,11):
+#     print(f"Serving chai to token #{token}")
 
 # here range() is an iterable -> a sequence Object which generates number from a specified range to a specified range where the last_range is exclusive.
+# Also note that, range()'s third parameter is step - so it skips the specified number of steps.
 
-for number in range(1,11,2):
-    print(number)
+# for number in range(1,11,2):
+#     print(number)
 
 
+
+names = ("Shailesh","Nilesh","Megha", "Sonali")
+# for users in names:
+#     print(users)
+
+
+# Now lets move towards enumerate() it helps you to print the index number.
+
+for idx, user in enumerate(names, start=1):
+    print(f"{idx}: {user}")
