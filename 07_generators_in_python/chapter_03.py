@@ -21,3 +21,16 @@ next(chai) # executes the code of lines till it meets yield.
 chai.send("Masala chai") # sends value to the yield...
 chai.send("Ginger chai") # sends value to the yield...
 
+
+
+# Filtering text data using the generator...
+def text_filter():
+    while True:
+        text = yield
+        print("Cleaned:", text.strip().lower())
+        
+g = text_filter()
+next(g)
+g.send("   Hello BRO   ")  # "hello bro"
+g.send("   PYTHON   ")     # "python"
+g.send("   RIYANSH   ")     # "riyansh"
